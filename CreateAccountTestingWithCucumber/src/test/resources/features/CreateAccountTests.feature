@@ -1,5 +1,5 @@
 @register
-Feature: As user/buyer, I want to register
+Feature: As user/buyer, I want to register/create an account
 
 
   @test001

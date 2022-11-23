@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -33,6 +34,11 @@ public class RegisterSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
+    }
+
+    @After
+    public void fechar(){
+        driver.quit();
     }
 
     @Given("that I open the Amazon Website: {string}")
